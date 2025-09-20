@@ -1,0 +1,5 @@
+Alice;S1001;3.9
+Bob;S1002;3.7
+Charlie;S1003;3.9
+David;S1004;3.5
+END
