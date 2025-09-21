@@ -66,11 +66,13 @@ public class Book implements Comparable<Book> {
         // type casting
         // analogy: o is speaking o language, and you want it to speak book language, so you need to translate them using (Book).
         Book book = (Book) o;
+        // notice that we left out price because, price is just an attribute not an identity of the book
         return Objects.equals(title, book.title) &&
                 Objects.equals(author, book.author);
     }
 
     // if two objects are equal, they must have the same hashCode()
+    // 31 is a magic number used to avoid collision when distribute the number
     @Override
     public int hashCode() {
         int result = Objects.hashCode(title);
